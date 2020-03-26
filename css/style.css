@@ -17,7 +17,6 @@ body,
   height: 2.8rem;
   background-color: black;
 }
-
 ul li {
   float: left;
   width: 12rem;
@@ -26,21 +25,20 @@ ul li {
   text-align: center;
   font-size: 1.25rem;
 }
-
-.listHome:hover,
-.listAbout:hover,
-.listActivities:hover,
-.listContact:hover {
-  background-color: rgba(197, 63, 1, 0.904);
-  color: black;
-}
-
 .listItem {
   display: none;
   background-color: black;
   opacity: 0.9;
   margin: 0;
   transition: 1s;
+}
+/* Animating top and sub menus ________________________________ */
+.listHome:hover,
+.listAbout:hover,
+.listActivities:hover,
+.listContact:hover {
+  background-color: rgba(197, 63, 1, 0.904);
+  color: black;
 }
 .listItem:hover a {
   border-bottom: 0.12rem solid rgba(197, 63, 1, 0.904);
@@ -52,16 +50,13 @@ ul li {
   transition: 1s;
 }
 
-ul li:hover ul li {
+.mainList li:hover ul li {
   display: block;
 }
 
 /* Responsiv Side bar________________________________________________*/
 
 @media screen and (max-width: 500px) {
-  * {
-    position: relative;
-  }
   .navBar {
     left: 0;
     width: 50vw;
@@ -86,6 +81,13 @@ ul li:hover ul li {
     position: absolute;
     left: 100%;
     top: 0;
+  }
+  /* Animating the sub menus  ___________________________________*/
+  .listHome:hover,
+  .listAbout:hover,
+  .listActivities:hover,
+  .listContact:hover {
+    padding-right: 2rem;
   }
   .listItem:hover:first-child {
     border-top: 0.12rem solid rgba(197, 63, 1, 0.904);
