@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  transition: 1s;
+  transition: 1s ease-in-out;
   text-decoration: none;
   color: white;
 }
@@ -30,7 +30,6 @@ ul li {
   background-color: black;
   opacity: 0.9;
   margin: 0;
-  transition: 1s;
 }
 /* Animating top and sub menus ________________________________ */
 .listHome:hover,
@@ -42,12 +41,10 @@ ul li {
 }
 .listItem:hover a {
   border-bottom: 0.12rem solid rgba(197, 63, 1, 0.904);
-  transition: 0.5;
 }
 .listItem:hover {
   border-right: 1vw solid rgba(197, 63, 1, 0.904);
   border-left: 4vw solid rgba(197, 63, 1, 0.904);
-  transition: 1s;
 }
 
 .mainList li:hover ul li {
